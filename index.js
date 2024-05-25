@@ -10,7 +10,7 @@ const originDomain = "origin-pragmaticplay.net";
     }
 
     let files = fs.readdirSync("./");
-    let cnt = 0;
+    let cnt = 1;
 
     for (const file of files) {
         if (file[0] >= '0' && file[0] <= '9' && file[1] == '-') {

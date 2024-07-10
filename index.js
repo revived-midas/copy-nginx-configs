@@ -13,7 +13,7 @@ const originDomain = "origin-pragmaticplay.net";
     let cnt = 1;
 
     for (const file of files) {
-        if (file[0] >= '0' && file[0] <= '9' && file[1] == '-') {
+        if (Number(file.split("-")[0])) {
             ++cnt;
         }
     }

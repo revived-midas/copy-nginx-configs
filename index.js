@@ -25,7 +25,7 @@ const originDomain = "origin-pragmaticplay.net";
 
     for (const file of files) {
         const content = fs.readFileSync("./src/" + file, 'utf-8');
-        const newContent = content.replace(originDomain, newDomain);
+        const newContent = content.replaceAll(originDomain, newDomain);
         const newFile = file.replace(originDomain, newDomain);
 
         fs.writeFileSync(newDir + "/" + newFile, newContent);
